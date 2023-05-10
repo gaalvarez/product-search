@@ -1,0 +1,40 @@
+.productDetail {
+  .row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+
+  .column {
+    flex: 1;
+  }
+
+  .productImage {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .productTitle {
+    font-size: 24px;
+    margin: 10px 0;
+  }
+
+  .productPrice {
+    font-size: 30px;
+    color: #00a650;
+    margin: 10px 0;
+  }
+
+  .buyButton {
+    background-color: #3483fa;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .productDescription {
+    margin-top: 10px;
+  }
+}

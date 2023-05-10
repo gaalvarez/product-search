@@ -1,0 +1,32 @@
+@import "./variables";
+
+.layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: $background-color;
+  font-family: $font-family;
+}
+
+.appBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $primary-color;
+  padding: 12px;
+  column-gap: $spacing-unit;
+}
+
+.spanHeader {
+  min-width: 134px;
+}
+
+.title {
+  margin: 0;
+  color: $text-color;
+}
+
+.mainContent {
+  flex: 1;
+  padding: $spacing-unit;
+}
