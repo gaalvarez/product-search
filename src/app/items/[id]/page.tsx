@@ -26,7 +26,8 @@ export default async function Page({
     <div>
       <ProductDetail
         image={picture}
-        price={price.amount}
+        amount={price.amount?.toLocaleString("es-AR")}
+        decimals={price.decimals?.toString() || "00"}
         soldQuantity={sold_quantity}
         condition={condition}
         description={description}

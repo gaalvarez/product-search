@@ -3,10 +3,23 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
+    background-color: white;
+    width: 100%;
+    max-width: 62.5rem;
+    margin: auto;
   }
 
-  .column {
+  .imageColumn {
+    flex: 2;
+    padding: 1rem;
+  }
+
+  .detailsColumn {
     flex: 1;
+    padding: 1rem;
+    margin: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
   }
 
   .productImage {
@@ -15,14 +28,20 @@
   }
 
   .productTitle {
-    font-size: 24px;
+    font-size: 22px;
     margin: 10px 0;
+    font-weight: 700;
   }
 
   .productPrice {
-    font-size: 30px;
-    color: #00a650;
+    font-size: 36px;
+    color: #000000e6;
     margin: 10px 0;
+    font-weight: 300;
+    sup {
+      font-size: 0.6em;
+      margin-left: -5px;
+    }
   }
 
   .buyButton {
@@ -32,9 +51,21 @@
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    margin-top: 1rem;
+    width: 100%;
   }
-
-  .productDescription {
-    margin-top: 10px;
+  .descriptionWrapper {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    h3 {
+      font-size: 24px;
+      font-weight: 400;
+      margin-bottom: 1rem;
+    }
+    p {
+      color: #666;
+      font-size: 20px;
+    }
   }
 }
