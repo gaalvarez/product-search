@@ -1,7 +1,7 @@
-import "./globals.scss";
+import "./styles/globals.scss";
 
 import styles from "./styles/layout.module.scss";
-import SearchBar from "./components/SearchBar";
+import SearchBar from "./components/search-bar/SearchBar";
 import Image from "next/image";
 import logoMeli from "../../public/meli.png";
 

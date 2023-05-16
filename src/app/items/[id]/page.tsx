@@ -1,6 +1,5 @@
-import ProductDetail from "./components/ProductDetail";
+import ProductDetail from "../../components/product-detail/ProductDetail";
 import { ProductDetailData } from "./model";
-import styles from "./page.module.scss";
 
 async function getData(id: string): Promise<ProductDetailData> {
   const res = await fetch(`http://localhost:3000/dev/items/${id}`);

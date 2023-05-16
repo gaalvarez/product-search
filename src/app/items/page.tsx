@@ -1,5 +1,5 @@
-import Breadcrumb from "./components/Breadcrumb";
-import ProductCard from "./components/ProductCard";
+import Breadcrumb from "../components/breadcrumb/Breadcrumb";
+import ProductCard from "../components/product-card/ProductCard";
 import { Category, Item, SearchResult } from "./model";
 import styles from "./page.module.scss";
 
@@ -27,7 +27,7 @@ export default async function Page({
   return (
     <div>
       <Breadcrumb
-        crumbs={data.categories.map((category: Category) => ({
+        crumbs={(data.categories || []).map((category: Category) => ({
           label: category.name,
           href: `/category/${category.id}`,
         }))}

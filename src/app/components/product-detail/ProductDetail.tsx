@@ -1,4 +1,4 @@
-import styles from "./product-detail.module.scss";
+import styles from "./productDetail.module.scss";
 
 interface ProductDetailProps {
   image: string;
