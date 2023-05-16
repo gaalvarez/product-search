@@ -25,7 +25,7 @@ export default async function Page({
   const data: SearchResult = await getData(query);
 
   return (
-    <div>
+    <div className={styles.resultWrapper}>
       <Breadcrumb
         crumbs={(data.categories || []).map((category: Category) => ({
           label: category.name,
@@ -38,7 +38,8 @@ export default async function Page({
             key={item.id}
             image={item.picture}
             name={item.title}
-            price={item.price.amount}
+            amount={item.price.amount?.toLocaleString("es-AR")}
+            decimals={item.price.decimals?.toString()}
             hasFreeShipping={item.free_shipping}
             detailsLink={`/items/${item.id}`}
           />

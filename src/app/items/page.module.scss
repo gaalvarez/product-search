@@ -1,8 +1,13 @@
-.product-grid {
+.productGrid {
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  background-color: white;
-  padding: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.resultWrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  max-width: 50rem;
 }

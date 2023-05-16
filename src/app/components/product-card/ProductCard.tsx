@@ -6,7 +6,8 @@ import styles from "./productCard.module.scss";
 interface ProductCardProps {
   image: string;
   name: string;
-  price: number;
+  amount: string;
+  decimals: string;
   hasFreeShipping: boolean;
   detailsLink: string;
 }
@@ -14,14 +15,17 @@ interface ProductCardProps {
 const ProductCard: React.FC<ProductCardProps> = ({
   image,
   name,
-  price,
+  amount,
+  decimals,
   hasFreeShipping,
   detailsLink,
 }) => {
   return (
     <div className={styles.card}>
       <div className={styles.imageColumn}>
-        <Image src={image} alt={name} width={150} height={150} />
+        <Link href={detailsLink}>
+          <Image src={image} alt={name} width={150} height={150} />
+        </Link>
       </div>
       <div className={styles.infoColumn}>
         <Link href={detailsLink}>
@@ -29,7 +33,9 @@ const ProductCard: React.FC<ProductCardProps> = ({
             <h2>{name}</h2>
           </span>
         </Link>
-        <p>${price}</p>
+        <p>
+          ${amount} <sup>{decimals !== "0" ? decimals : null}</sup>
+        </p>
         {hasFreeShipping && (
           <p className={styles.freeShipping}>Entrega gratis</p>
         )}

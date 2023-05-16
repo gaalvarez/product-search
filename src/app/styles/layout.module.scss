@@ -5,16 +5,21 @@
   flex-direction: column;
   min-height: 100vh;
   background-color: $background-color;
-  font-family: $font-family;
 }
 
 .appBar {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   background-color: $primary-color;
   padding: 12px;
   column-gap: $spacing-unit;
+  div {
+    display: flex;
+    width: 100%;
+    column-gap: $spacing-unit;
+    max-width: 50rem;
+    margin: auto;
+  }
 }
 
 .spanHeader {
