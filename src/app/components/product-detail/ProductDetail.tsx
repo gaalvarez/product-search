@@ -1,3 +1,4 @@
+import Image from "next/image";
 import styles from "./productDetail.module.scss";
 
 interface ProductDetailProps {
@@ -35,7 +36,19 @@ const ProductDetail: React.FC<ProductDetailProps> = ({
     <div className={styles.productDetail}>
       <div className={styles.row}>
         <div className={styles.imageColumn}>
-          <img src={image} alt={title} className={styles.productImage} />
+          <Image
+            src={image}
+            alt={title}
+            className={styles.productImage}
+            width={400}
+            height={500}
+            style={{
+              objectFit: "cover",
+              position: "relative",
+              width: "100%",
+              height: "100%",
+            }}
+          />
         </div>
         <div className={styles.detailsColumn}>
           <div>

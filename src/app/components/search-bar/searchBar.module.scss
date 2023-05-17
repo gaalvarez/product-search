@@ -24,8 +24,16 @@
   cursor: pointer;
   border-radius: 0 4px 4px 0;
   white-space: nowrap; // Asegura que el botón no se ajuste al contenido
+  margin-left: -14px;
 }
 
 .icon-search {
   // Agrega el ícono de búsqueda que prefieras.
+}
+
+.clearIcon {
+  margin-top: 10px;
+  transform: translatex(-25px);
+  cursor: pointer;
+  font-size: large;
 }

@@ -49,11 +49,16 @@
     color: white;
     padding: 10px 20px;
     border: none;
-    border-radius: 5px;
+    border-radius: 0.375rem;
     cursor: pointer;
-    margin-top: 1rem;
+    margin-top: 2rem;
     width: 100%;
+    border-color: transparent;
+    font-size: 18px;
+    font-weight: 500;
+    height: 48px;
   }
+
   .descriptionWrapper {
     padding: 2rem;
     display: flex;
