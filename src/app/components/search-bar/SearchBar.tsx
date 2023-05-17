@@ -55,6 +55,7 @@ const SearchBar: React.FC<SearchBarProps> = ({ placeholder }) => {
           className={styles.clearIcon}
           icon={faTimes}
           onClick={clearSearch}
+          data-testid="clear-action"
         />
       )}
       <button type="submit" className={styles.searchButton}>

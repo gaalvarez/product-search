@@ -41,7 +41,7 @@ const ProductCard: React.FC<ProductCardProps> = ({
         )}
       </div>
       <div className={styles.actionColumn}>
-        <Link href={detailsLink}>
+        <Link data-testid="detail-link" href={detailsLink}>
           <span>Ver detalles</span>
         </Link>
       </div>
